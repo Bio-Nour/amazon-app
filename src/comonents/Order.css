@@ -1,17 +1,49 @@
 .order {
-    padding: 40px;
-    margin: 20px 0;
-    background-color: white;
-    border: 1px solid lightgray;
-    position: relative;
+  padding: 40px;
+  margin: 20px 0;
+  background-color: white;
+  border: 1px solid lightgray;
+  position: relative;
+}
+
+.order-id {
+  position: absolute;
+  row-gap: 40px;
+  right: 20px;
+}
+
+.order-total {
+  font-weight: 500;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .order {
+    padding: 20px;
+    margin: 10px 0;
   }
+
   .order-id {
-    position: absolute;
-    row-gap: 40px;
-    right: 20px;
+    position: static;
+    margin-bottom: 10px;
   }
+
   .order-total {
-    font-weight: 500;
+    text-align: left;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .order {
+    padding: 30px;
+    margin: 15px 0;
+  }
+
+  .order-id {
+    right: 10px;
+  }
+
+  .order-total {
     text-align: right;
   }
-  
+}
